@@ -12,7 +12,8 @@
 - [ ] CI/CD 배포 github action으로 세팅
 - [ ] console창이라도 배포하기 
 ### 지성 
-- [ ] 
+- [ ] Vite 번들러 세팅
+- [ ] 필요 패키지 설치 
 ### 유진 
 - [ ] storybook 세팅
 - [ ] global style 적용 방법 고민하기
