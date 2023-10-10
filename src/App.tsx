@@ -3,12 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+// TODO : 절대경로 test
+import Button from '@/components/Button'
+import Home from '@/pages/Home'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
       <div>
+        <Button />
+        <Home />
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
