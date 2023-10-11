@@ -19,7 +19,7 @@ function App() {
     <>
       <div>
         <Box></Box>
-        <Button text={'wdwdwd'} />
+        <Button text={'CI/CD 성공!!'} />
         <a href={'https://vitejs.dev'} target={'_blank'}>
           <img src={viteLogo} className={'logo'} alt={'Vite logo'} />
         </a>
