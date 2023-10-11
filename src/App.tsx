@@ -5,7 +5,6 @@ import './App.css'
 
 // TODO : 절대경로 test
 import Button from '@/components/common/Button'
-import Home from '@/pages/Home'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +19,6 @@ function App() {
     <>
       <div>
         <Button text={'wdwdwd'} />
-        <Home />
         <a href={'https://vitejs.dev'} target={'_blank'}>
           <img src={viteLogo} className={'logo'} alt={'Vite logo'} />
         </a>
