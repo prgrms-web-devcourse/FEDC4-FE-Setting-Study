@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 // TODO : 절대경로 test
-import Button from '@/components/Button'
+import Button from '@/components/common/Button'
 import Home from '@/pages/Home'
 
 function App() {
