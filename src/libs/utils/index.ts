@@ -1,0 +1,1 @@
+export { parseMyWord } from './parseMyWord'
