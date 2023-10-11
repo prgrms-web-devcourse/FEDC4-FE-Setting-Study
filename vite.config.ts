@@ -4,17 +4,21 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base:'.',
   plugins: [react()],
   resolve: {
-    alias: [
-      {
-        find: '@/public',
-        replacement: path.resolve(__dirname, '')
-      },
-      {
-        find: '@',
-        replacement: path.resolve(__dirname, 'src')
-      }
-    ]
-  }
+    alias: { '@/': `${process.cwd()}/src/` },
+  },
+  // resolve: {
+  //   alias: [
+  //     {
+  //       find: '@/public',
+  //       replacement: path.resolve(__dirname, '')
+  //     },
+  //     {
+  //       find: '@',
+  //       replacement: path.resolve(__dirname, 'src')
+  //     }
+  //   ]
+  // }
 })

@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import { Button } from '@components/common'
+import reactLogo from './assets/img/react.svg'
+import { Button } from '@/components/common'
 import viteLogo from '/vite.svg'
 import './App.css'
 
