@@ -24,7 +24,14 @@
     "baseUrl": ".",
     "paths": {
       "@public": ["/"],
-      "@/*": ["src/*"]
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@apis/*": ["src/apis/*"],
+      "@assets/*": ["src/assets/*"],
+      "@constants/*": ["src/constants/index.ts"],
+      "@hooks/*": ["src/hooks/index.ts"],
+      "@routes/*": ["src/routes/index.ts"],
+      "@types": ["src/types/index.ts"]
     }
   },
   "include": ["src"],
