@@ -1,4 +1,4 @@
-import type { Todo } from '@/types'
+import type { Todo } from '@types'
 import { api } from '../axios'
 
 export const TODO_API = {

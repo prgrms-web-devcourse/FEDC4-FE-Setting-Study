@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import { Button } from '@components/common'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 // TODO : 절대경로 test
-import Button from '@/components/common/Button'
 
 function App() {
   const [count, setCount] = useState(0)
