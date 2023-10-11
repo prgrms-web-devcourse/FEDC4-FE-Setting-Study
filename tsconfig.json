@@ -23,17 +23,18 @@
     /* path alias */
     "baseUrl": ".",
     "paths": {
-      "@public": ["/"],
-      "@components/*": ["src/components/*"],
-      "@pages/*": ["src/pages/*"],
-      "@apis/*": ["src/apis/*"],
-      "@assets/*": ["src/assets/*"],
-      "@constants/*": ["src/constants/index.ts"],
-      "@hooks/*": ["src/hooks/index.ts"],
-      "@routes/*": ["src/routes/index.ts"],
-      "@types": ["src/types/index.ts"]
+      "@/public": ["/"],
+      "@/components/*": ["src/components/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/apis/*": ["src/apis/*"],
+      "@/assets/*": ["src/assets/*"],
+      "@/constants/*": ["src/constants/index.ts"],
+      "@/hooks/*": ["src/hooks/index.ts"],
+      "@/routes/*": ["src/routes/index.ts"],
+      "@/types": ["src/types/index.ts"]
     }
   },
   "include": ["src"],
+  "exclude": ["node_modules", "**/.*/", ".yarn" , "storybook-static"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
