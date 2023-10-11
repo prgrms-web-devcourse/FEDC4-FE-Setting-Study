@@ -1,6 +1,6 @@
 interface Type {
   text: string
 }
-export default function Button({ text: string }: Type) {
-  return <button>{'text'}</button>
+export default function Button({ text }: Type) {
+  return <button>{text}</button>
 }
