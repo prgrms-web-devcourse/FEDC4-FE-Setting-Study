@@ -1,5 +1,5 @@
 ---
-name: Bug issue template
+name: Feature issue template
 about: 'about need to fix bug'
 title: '🐞 [Bug] '
 labels: Bug
