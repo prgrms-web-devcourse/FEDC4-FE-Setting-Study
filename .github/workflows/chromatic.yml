@@ -5,7 +5,7 @@ on:
     paths: ['src/components/common/**']
 
 jobs:
-  test:
+  storybook:
     permissions:
       pull-requests: write
     runs-on: ubuntu-latest
