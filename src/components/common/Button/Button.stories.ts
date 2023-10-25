@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button } from './Button';
+import  Button from './Button';
 
 const meta = {
   title: 'Example/Button',
@@ -42,4 +42,4 @@ export const Small: Story = {
     size: 'small',
     label: 'Button',
   },
-};
+}
