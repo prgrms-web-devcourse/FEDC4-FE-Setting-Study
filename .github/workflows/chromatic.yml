@@ -22,9 +22,9 @@ jobs:
         with :
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{secrets.GH_TOKEN}}
-      - name: comment PR  git
-        uses: thollander/actions-comment-pull-request@v1
+      - name: comment PR
+        uses: thollander/actions-comment-pull-request@v2
         env:
-          GITHUB_TOEKN: ${{secrets.GH_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
         with:  
-          message: "🚀storybook: ${{steps.chromatic.outputs}}"  
+          message: "🚀storybook: ${{ steps.chromatic.outputs.storybookUrl }}"
