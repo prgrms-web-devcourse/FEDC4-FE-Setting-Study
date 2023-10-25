@@ -1,7 +1,7 @@
 /* eslint-disable unicorn/consistent-function-scoping */
 import { useMemo } from 'react'
 type ButtonType = 'small' | 'medium' | 'large'
-
+//
 interface ButtonProperties {
   primary?: boolean
   backgroundColor?: string
