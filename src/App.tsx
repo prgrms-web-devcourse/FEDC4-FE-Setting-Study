@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/img/react.svg'
-import { Box, Button } from '@/components/common'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Button } from '@/components/common'
+import './style/global.css'
 
 // TODO : 절대경로 test
 
@@ -14,33 +12,10 @@ function App() {
   // const myNumber = 10
   // const my_number = 20 // 얘 에러남!
   // const mynumber = 20
-  console.log('안녕!')
   return (
     <>
-      <div>
-        <Box></Box>
-        <Button text={'CI/CD 성공!!'} />
-        <a href={'https://vitejs.dev'} target={'_blank'}>
-          <img src={viteLogo} className={'logo'} alt={'Vite logo'} />
-        </a>
-        <a href={'https://react.dev'} target={'_blank'}>
-          <img src={reactLogo} className={'logo react'} alt={'React logo'} />
-        </a>
-      </div>
-      <h1>{'Vite + React'}</h1>
-      <div className={'card'}>
-        <button onClick={() => setCount((count) => count + 1)}>
-          {'count is '}
-          {count}
-        </button>
-        <p>
-          {'Edit '}
-          <code>{'src/App.tsx'}</code> {'and save to test HMR'}
-        </p>
-      </div>
-      <p className={'read-the-docs'}>
-        {'Click on the Vite and React logos to learn more'}
-      </p>
+        <Button label='안녕' primary={true}></Button>
+        <button className='text-3xl text-blue-500 bg-pink'>크아악</button>
     </>
   )
 }

@@ -1,0 +1,26 @@
+name: Build & Deploy Storybook
+on:
+  pull_request:
+    branches: [main]
+    paths: ['src/components/common/**']
+
+jobs:
+  test:
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install dependencies
+        run: npm install
+      - uses: chromaui/action@v1
+      - name: Publish to Chromatic
+        id: chromatic
+        run : npm run chromatic
+        env:
+          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+      - name: comment PR  
+        uses: thollander/actions-comment-pull-request@v2  
+        with:  
+          message: "🚀storybook: https://www.chromatic.com/builds?appId=64ace737dc3be00731907172"  
+
