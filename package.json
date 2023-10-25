@@ -9,9 +9,11 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "lint:eslint": "eslint --ext ts,tsx \"src/**/*.{ts,tsx}\"",
-    "lint:prettier": "prettier --write \"src/**/*.{ts,tsx}\""
+    "lint:prettier": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@storybook/react": "^7.5.1",
     "@types/node": "^20.8.4",
     "@typescript-eslint/eslint-plugin-tslint": "^6.7.5",
     "@vitejs/plugin-react": "^4.1.0",
@@ -25,6 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.5",
     "@vitejs/plugin-react-swc": "^3.3.2",
+    "chromatic": "^7.5.0",
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-import-resolver-typescript": "^3.6.1",
