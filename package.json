@@ -10,8 +10,8 @@
     "preview": "vite preview",
     "lint:eslint": "eslint --ext ts,tsx \"src/**/*.{ts,tsx}\"",
     "lint:prettier": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "build-storybook": "storybook build"
-    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "@storybook/react": "^7.5.1",
